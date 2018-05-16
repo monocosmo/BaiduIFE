@@ -1,2 +1,6 @@
-# This file is the Day1 homework.
-# This file tests the Github submission.
+# This file is the Day1 homework, which has two purposes:
+# 1. Tests the Github push and edit.
+# 2. Tests the Github page.
+
+# Everything seems working now. I'll start my Baidu_IFE from here.
+# This is the end of beginning!
