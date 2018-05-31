@@ -54,6 +54,6 @@ li{
   list-style-type: none;
 }
 
-specT1, specT2, eduT1, eduT2, expT1, expT2{
+infoNameT, infoSexT, infoTargetT, contactCellT, contactEmailT, contactWebT, specT1, specT2, eduT1, eduT2, expT1, expT2{
   font-weight: bold;
 }
