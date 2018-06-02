@@ -1,5 +1,11 @@
 /* This is the css file of style_3 */
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html{
   font-family: Microsoft Yahei;
   display: table;

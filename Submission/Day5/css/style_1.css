@@ -12,6 +12,7 @@ contactEmail, contactWeb{
 li{
   line-height: 2px;
   list-style-type: none;
+  display: inline;
 }
 
 specH, eduH, expH{
