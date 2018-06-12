@@ -1,6 +1,6 @@
 # Baidu IFE
 ### Day 16
 
-Use Javascript generate a button on the demo resume webpage
+Use Javascript to generate a button on the demo resume webpage
 
-[Reference Link](http://ife.baidu.com/college/detail/id/45)
+[Reference Link](http://ife.baidu.com/course/detail/id/45)
