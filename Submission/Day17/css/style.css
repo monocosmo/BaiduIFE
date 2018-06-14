@@ -36,6 +36,16 @@ html{
 .content {
   width: 100%;
 }
+/*content banner*/
+.content .banner{
+  width: 100%;
+  height: 40px;
+  background-color: #99FF99;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
 /*content lists*/
 .content .lists{
   padding: 10px;

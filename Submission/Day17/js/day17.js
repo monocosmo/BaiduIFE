@@ -1,3 +1,21 @@
+// date
+function mOver(obj){
+    var myDate = new Date();
+    var myTime = myDate.getHours();
+    if (myTime < 12){
+        obj.innerHTML = "Good morning! " + "Today is " + myDate.toLocaleDateString();
+    } else if (myTime < 17){
+        obj.innerHTML = "Good afternoon! " + "Today is " + myDate.toLocaleDateString();
+    } else if (myTime < 20){
+        obj.innerHTML = "Good evening! " + "Today is " + myDate.toLocaleDateString();
+    } else{
+        obj.innerHTML = "Good night! " + "Today is " + myDate.toLocaleDateString();
+    }
+    
+}
+function mOut(obj){
+    obj.innerHTML = "What a wonderful day!";
+}
 // add
 function add(){
     var first = Number(document.getElementById("first-number").value);
