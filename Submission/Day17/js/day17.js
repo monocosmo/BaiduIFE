@@ -48,3 +48,7 @@ function dec2bin(decNumber) {
     }
     document.getElementById("result2").innerHTML = output;
 }
+//Celsius to Fahrenheit
+//Fahrenheit to Celsius
+//Pound to Kilogram
+//Kilogram to Pound
