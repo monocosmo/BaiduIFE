@@ -1,0 +1,79 @@
+ <!–- This is the html file for Day7 project -–> 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>day17</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script type="text/javascript" src="../js/day17.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="logo">
+        <a>Online Tools</a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/monocosmo">by monocosmo</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="lists">
+        <div class="line line1">
+          <div class="calculator">
+            <input id="first-number" type="number" value="0" placeholder="第一个数字">
+            <input id="second-number" type="number" value="0" placeholder="第二个数字">
+            <br />
+            <button id="add-btn" onclick="add()">+</button>
+            <button id="minus-btn" onclick="minus()">-</button>
+            <button id="times-btn" onclick="times()">x</button>
+            <button id="divide-btn" onclick="divide()">÷</button>
+            <br />
+            <a>= </a>
+            <a id="result1">___________</a>
+          </div>
+          <div class="dec2bin">
+            <input id="dec-number" type="number" placeholder="Input a decimal number">
+            <br />
+            <button id="trans-btn" onclick="dec2bin()">Transfer to binary</button>
+            <br />
+            <a>= </a>
+            <a id="result2">___________</a>
+          </div>
+        </div>
+        <div class="line line2">
+          <div class="temperature">
+            <input id="cel" type="number" placeholder="Input a Celsius degree">
+            <button id="trans-btn" onclick="cel2fah()">to F</button>
+            <br />
+            <a>= </a>
+            <a id="result3-1">___________</a>
+            <br />
+            <input id="fah" type="number" placeholder="Input a Fahrenheit degree">
+            <button id="trans-btn" onclick="fah2cel()">to C</button>
+            <br />
+            <a>= </a>
+            <a id="result3-2">___________</a>
+          </div>
+          <div class="weight">
+            <input id="lb" type="number" placeholder="Input Pound">
+            <button id="trans-btn" onclick="lb2kg()">to Kg</button>
+            <br />
+            <a>= </a>
+            <a id="result4-1">___________</a>
+            <br />
+            <input id="kg" type="number" placeholder="Input Kilogram">
+            <button id="trans-btn" onclick="fah2cel()">to Lb</button>
+            <br />
+            <a>= </a>
+            <a id="result4-2">___________</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://github.com/monocosmo">monocosmo@Github</a>
+    </div>
+  </div>
+</body>
+</html>
