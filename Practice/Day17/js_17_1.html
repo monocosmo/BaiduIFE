@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">    
     <title>IFE ECMAScript</title>
+    <script type="text/javascript" src="js_17_1.js"></script>
 </head>
 <body>        
     <input id="first-number" type="number" value="0" placeholder="第一个数字">
@@ -12,39 +13,5 @@
     <button id="times-btn" onclick="times()">乘</button>
     <button id="divide-btn" onclick="divide()">除</button>
     <p id="result">运算结果</p>
-    <script>
-        // add
-        function add(){
-            var first = Number(document.getElementById("first-number").value);
-            var second = Number(document.getElementById("second-number").value);
-            var result = first + second;
-            document.getElementById("result").innerHTML = result;
-        }
-        // minus
-        function minus(){
-            var first = Number(document.getElementById("first-number").value);
-            var second = Number(document.getElementById("second-number").value);
-            var result = first - second;
-            document.getElementById("result").innerHTML = result;
-        }
-        // times
-        function times(){
-            var first = Number(document.getElementById("first-number").value);
-            var second = Number(document.getElementById("second-number").value);
-            var result = first * second;
-            document.getElementById("result").innerHTML = result;
-        }
-        // divide
-        function divide(){
-            var first = Number(document.getElementById("first-number").value);
-            var second = Number(document.getElementById("second-number").value);
-            if (second == 0){
-                result = "0: invalid input"
-            } else{
-                var result = first / second;
-            }
-            document.getElementById("result").innerHTML = result;
-        }
-    </script>
 </body>
 </html>
