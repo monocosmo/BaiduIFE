@@ -49,14 +49,14 @@ function divide(){
     document.getElementById("result1").innerHTML = result;
     }
 //decimal to binary
-function dec2bin(decNumber) {
+function dec2bin(decNumber){
     var output;
     var dec = Number(document.getElementById("dec-number").value);
-    if (dec < 0) {
+    if (dec < 0){
         output = "Invalid negative input";
-    } else if (dec == 0) {
+    } else if (dec == 0){
         output = "0";
-    } else {
+    } else{
         var resisual = dec;
         output = "";
         while(resisual / 2 > 0){
@@ -67,6 +67,26 @@ function dec2bin(decNumber) {
     document.getElementById("result2").innerHTML = output;
 }
 //Celsius to Fahrenheit
+function cel2fah(){
+    var cel = Number(document.getElementById("cel").value);
+    var output = cel * 1.8 + 32
+    document.getElementById("result3-1").innerHTML = output;
+}
 //Fahrenheit to Celsius
+function fah2cel(){
+    var fah = Number(document.getElementById("fah").value);
+    var output = (fah - 32) / 1.8
+    document.getElementById("result3-2").innerHTML = output;
+}
 //Pound to Kilogram
+function lb2kg(){
+    var lb = Number(document.getElementById("lb").value);
+    var output = lb / 2.2046
+    document.getElementById("result4-1").innerHTML = output;
+}
 //Kilogram to Pound
+function kg2lb(){
+    var kg = Number(document.getElementById("kg").value);
+    var output = kg * 2.2046
+    document.getElementById("result4-2").innerHTML = output;
+}
