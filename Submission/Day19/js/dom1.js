@@ -5,7 +5,7 @@ function getAllListItem() {
     output = document.getElementById("q1");
     for(var i = 0; i < elements.length; i++){
     	var para = document.createElement("p");
-    	para.textContent = elements[i].firstChild.innerHTML + " " + elements[i].lastChild.innerHTML;
+    	para.textContent = elements[i].firstChild.innerHTML + "(span): " + elements[i].lastChild.innerHTML;
     	output.appendChild(para);
     }
 }
