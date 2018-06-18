@@ -45,9 +45,18 @@
         <button id="btn1" onclick="findAllHtmlSpanInOneSection('news-top')">Breaking News</button>
         <button id="btn2" onclick="findAllHtmlSpanInOneSection('news-normal')">Everyday News</button>
         <p id="q2"></p>
+        <h4>Question 3: Return all the elements with certain span content in a certain section</h4>
+        <select id="s1">
+            <option>JS</option>
+            <option>CSS</option>
+            <option>HTML</option>
+        </select>
+        <button id="btn3" onclick="findListItem('news-top', document.getElementById('s1').value)">Breaking News</button>
+        <button id="btn4" onclick="findListItem('news-normal', document.getElementById('s1').value)">Everyday News</button>
+        <p id="q3"></p>
         <h4>Question 4: Return all the elements with active link in a certain section</h4>
-        <button id="btn3" onclick="getActiveLinkContent('news-top')">Breaking News</button>
-        <button id="btn4" onclick="getActiveLinkContent('news-normal')">Everyday News</button>
+        <button id="btn5" onclick="getActiveLinkContent('news-top')">Breaking News</button>
+        <button id="btn6" onclick="getActiveLinkContent('news-normal')">Everyday News</button>
         <p id="q4"></p>
     </div>
 </body>

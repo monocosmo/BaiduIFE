@@ -5,7 +5,7 @@ function getAllListItem() {
     output = document.getElementById("q1");
     for(var i = 0; i < elements.length; i++){
     	var para = document.createElement("p");
-    	para.textContent = (i+1) + ": " + elements[i].firstChild.innerHTML + " " + elements[i].lastChild.innerHTML;
+    	para.textContent = elements[i].firstChild.innerHTML + " " + elements[i].lastChild.innerHTML;
     	output.appendChild(para);
     }
 }
@@ -18,7 +18,7 @@ function findAllHtmlSpanInOneSection(sectionId) {
     for(var i = 0; i < elements.length; i++){
     	if (elements[i].innerHTML == "HTML"){
     		var para = document.createElement("p");
-    		para.textContent = (i+1) + ": " + elements[i].parentNode.children[1].innerHTML;
+    		para.textContent = elements[i].parentNode.children[1].innerHTML;
     		output.appendChild(para);
     	}
     }
@@ -26,7 +26,16 @@ function findAllHtmlSpanInOneSection(sectionId) {
 
 function findListItem(sectionId, spanCont) {
     // 返回某个section下，所有所包含span内容为spanCont的LI标签
-    // I don't understand what is "spanCont"
+    var div1 = document.getElementById(sectionId);
+    var elements = div1.getElementsByTagName("span");
+    output = document.getElementById("q3");
+    for(var i = 0; i < elements.length; i++){
+        if (elements[i].innerHTML == spanCont){
+            var para = document.createElement("p");
+            para.textContent = elements[i].parentNode.children[1].innerHTML;
+            output.appendChild(para);
+        }
+    }
 }
 
 function getActiveLinkContent(sectionId) {
@@ -36,7 +45,7 @@ function getActiveLinkContent(sectionId) {
     output = document.getElementById("q4");
     for(var i = 0; i < elements.length; i++){
     	var para = document.createElement("p");
-    	para.textContent = (i+1) + ": " + elements[i].innerHTML;
+    	para.textContent = elements[i].innerHTML;
     	output.appendChild(para);
     }
 }
