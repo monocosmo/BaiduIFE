@@ -1,0 +1,54 @@
+<!–– html file for Baidu IFE Assignment Day 19 ––> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+    <script type="text/javascript" src="../js/dom1.js"></script>
+    <!–– Alternative solution is ../js/dom2.js ––> 
+</head>
+<body onload="getAllListItem()">        
+    <div id="wrapper">
+        <div id="news-top" class="section">
+            <h3>Breaking News</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>
+        <div id="news-normal" class="section">
+            <h3>Everyday News</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>      
+    </div>
+    <div>
+        <h3>Answers</h3>
+        <h4>Question 1: Return all the elements with li tag</h4>
+        <p id="q1"></p>
+        <h4>Question 2: Return all the elements with HTML as span content in a certain section</h4>
+        <button id="btn1" onclick="findAllHtmlSpanInOneSection('news-top')">Breaking News</button>
+        <button id="btn2" onclick="findAllHtmlSpanInOneSection('news-normal')">Everyday News</button>
+        <p id="q2"></p>
+        <h4>Question 4: Return all the elements with active link in a certain section</h4>
+        <button id="btn3" onclick="findAllHtmlSpanInOneSection('news-top')">Breaking News</button>
+        <button id="btn4" onclick="findAllHtmlSpanInOneSection('news-normal')">Everyday News</button>
+        <p id="q4"></p>
+    </div>
+</body>
+</html>
