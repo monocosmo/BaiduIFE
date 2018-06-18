@@ -32,13 +32,11 @@ function findListItem(sectionId, spanCont) {
 function getActiveLinkContent(sectionId) {
     // 返回某个section下，class为active的链接中包含的文字内容
     var div1 = document.getElementById(sectionId);
-    var elements = div1.getElementsByTagName("span");
-    output = document.getElementById("q2");
+    var elements = div1.getElementsByClassName("active");
+    output = document.getElementById("q4");
     for(var i = 0; i < elements.length; i++){
-    	if (elements[i].innerHTML == "HTML"){
-    		var para = document.createElement("p");
-    		para.textContent = (i+1) + ": " + elements[i].parentNode.children[1].innerHTML;
-    		output.appendChild(para);
-    	}
+    	var para = document.createElement("p");
+    	para.textContent = (i+1) + ": " + elements[i].innerHTML;
+    	output.appendChild(para);
     }
 }
